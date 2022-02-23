@@ -1,6 +1,7 @@
 use worker::*;
 
 mod handlers;
+mod response;
 
 #[event(fetch)]
 pub async fn main(req: Request, env: Env, _ctx: worker::Context) -> Result<Response> {
